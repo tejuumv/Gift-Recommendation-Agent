@@ -1,0 +1,905 @@
+{
+  "contact": {
+    "contact_id": "125f755b-b3f7-40bf-8af9-eee5a95bd520",
+    "contact_name": "Aarav Mehta",
+    "status": "approved",
+    "ranked_gifts": [
+      {
+        "rank": 1,
+        "gift_name": "Cricket Ball Inspired Card Holder with Stitched Pattern - Voganow",
+        "product_url": "https://www.voganow.com/products/cricket-ball-inspired-card-holder-with-stitched-pattern",
+        "store": "voganow.com",
+        "estimated_price": "4999.0",
+        "why_this_gift": "Connects to the explicit professional signal: VP Sales role.",
+        "personalisation_reasoning": "Grounded in the profile signal 'VP Sales role'.",
+        "personalised_message": "Thank you for the insightful conversation last week. I hope this card holder adds a touch of style to your desk. Looking forward to our next meeting.",
+        "confidence_score": 0.65,
+        "risk_level": "low",
+        "assumptions": []
+      }
+    ],
+    "personalised_messages": {
+      "0": "Thank you for the insightful conversation last week. I hope this card holder adds a touch of style to your desk. Looking forward to our next meeting."
+    },
+    "final_output": {
+      "contact_name": "Aarav Mehta",
+      "profile_signals": {
+        "strong_signals": [
+          "VP Sales role",
+          "Building high-performing revenue teams",
+          "Scaling SaaS businesses in India and SE Asia",
+          "Leading enterprise sales and GTM expansion",
+          "Managing enterprise accounts in BFSI and retail",
+          "Revenue leadership",
+          "SaaS GTM",
+          "Customer-led growth",
+          "Team building",
+          "Pipeline discipline",
+          "Trust, coaching, consistency",
+          "Cricket as leadership metaphor"
+        ],
+        "weak_signals": [
+          "India’s SaaS ecosystem trend",
+          "India vs Australia cricket match interest",
+          "Positive discovery call",
+          "Nurture relationship before follow-up"
+        ],
+        "signals_to_avoid": []
+      },
+      "search_trace": {
+        "queries_used": [
+          "Premium executive leather portfolio gift set product page India INR 3000-5000",
+          "Custom engraved business card holder and notebook set buy online India INR 3000-5000",
+          "Cricket-inspired executive desk organizer gift set product page India INR 3000-5000",
+          "cricket ball inspired card holder product page India INR 3000 5000",
+          "luxury cricket themed corporate gift product India INR 3000 5000",
+          "premium cricket corporate gift set product page India INR 3000 5000",
+          "buy online executive gift set for VP Sales role 3000-5000 INR India",
+          "product page premium corporate gift for revenue leadership team 3000-5000 INR India",
+          "gift set cricket-inspired sales leadership gift 3000-5000 INR India",
+          "premium executive gift set for VP Sales buy online product page INR 3000 5000 India",
+          "customized desk accessory gift set for sales leader buy online INR 3000 5000 India",
+          "luxury business gift set for sales executive 3000-5000 INR product page India",
+          "high-end corporate gift set for sales VP India buy online INR 3000 5000"
+        ],
+        "products_considered_count": 59
+      },
+      "recommended_gifts": [
+        {
+          "rank": 1,
+          "gift_name": "Cricket Ball Inspired Card Holder with Stitched Pattern - Voganow",
+          "product_url": "https://www.voganow.com/products/cricket-ball-inspired-card-holder-with-stitched-pattern",
+          "store": "voganow.com",
+          "estimated_price": "4999.0",
+          "why_this_gift": "Connects to the explicit professional signal: VP Sales role.",
+          "personalisation_reasoning": "Grounded in the profile signal 'VP Sales role'.",
+          "personalised_message": "Thank you for the insightful conversation last week. I hope this card holder adds a touch of style to your desk. Looking forward to our next meeting.",
+          "confidence_score": 0.65,
+          "risk_level": "low",
+          "assumptions": []
+        }
+      ],
+      "human_review": {
+        "status": "approved",
+        "available_actions": [
+          "approve",
+          "reject",
+          "edit",
+          "regenerate"
+        ]
+      },
+      "workflow_metrics": [
+        {
+          "node": "extract_signals",
+          "tool": "llm",
+          "calls": 1,
+          "latency_ms": 3359.5
+        },
+        {
+          "node": "generate_search_queries",
+          "tool": "llm",
+          "calls": 1,
+          "latency_ms": 1651.5
+        },
+        {
+          "node": "search_products",
+          "tool": "search",
+          "calls": 6,
+          "latency_ms": 6652.6
+        },
+        {
+          "node": "validate_products",
+          "tool": "http",
+          "calls": 36,
+          "latency_ms": 5982.9
+        },
+        {
+          "node": "generate_search_queries",
+          "tool": "llm",
+          "calls": 1,
+          "latency_ms": 1570.9
+        },
+        {
+          "node": "search_products",
+          "tool": "search",
+          "calls": 6,
+          "latency_ms": 3856.8
+        },
+        {
+          "node": "validate_products",
+          "tool": "http",
+          "calls": 17,
+          "latency_ms": 5.8
+        },
+        {
+          "node": "generate_search_queries",
+          "tool": "llm",
+          "calls": 1,
+          "latency_ms": 1163.8
+        },
+        {
+          "node": "search_products",
+          "tool": "search",
+          "calls": 6,
+          "latency_ms": 1244.2
+        },
+        {
+          "node": "validate_products",
+          "tool": "http",
+          "calls": 0,
+          "latency_ms": 5.1
+        },
+        {
+          "node": "rank_gifts",
+          "tool": "llm",
+          "calls": 1,
+          "latency_ms": 1815.9
+        },
+        {
+          "node": "generate_messages",
+          "tool": "llm",
+          "calls": 1,
+          "latency_ms": 822.8
+        }
+      ]
+    },
+    "confidence_flags": [
+      "Only 1 validated products found after three search passes; human input is recommended."
+    ],
+    "workflow_metrics": [
+      {
+        "node": "extract_signals",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 3359.5
+      },
+      {
+        "node": "generate_search_queries",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1651.5
+      },
+      {
+        "node": "search_products",
+        "tool": "search",
+        "calls": 6,
+        "latency_ms": 6652.6
+      },
+      {
+        "node": "validate_products",
+        "tool": "http",
+        "calls": 36,
+        "latency_ms": 5982.9
+      },
+      {
+        "node": "generate_search_queries",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1570.9
+      },
+      {
+        "node": "search_products",
+        "tool": "search",
+        "calls": 6,
+        "latency_ms": 3856.8
+      },
+      {
+        "node": "validate_products",
+        "tool": "http",
+        "calls": 17,
+        "latency_ms": 5.8
+      },
+      {
+        "node": "generate_search_queries",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1163.8
+      },
+      {
+        "node": "search_products",
+        "tool": "search",
+        "calls": 6,
+        "latency_ms": 1244.2
+      },
+      {
+        "node": "validate_products",
+        "tool": "http",
+        "calls": 0,
+        "latency_ms": 5.1
+      },
+      {
+        "node": "rank_gifts",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1815.9
+      },
+      {
+        "node": "generate_messages",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 822.8
+      }
+    ]
+  },
+  "trace": {
+    "profile_signals": {
+      "strong_signals": [
+        "VP Sales role",
+        "Building high-performing revenue teams",
+        "Scaling SaaS businesses in India and SE Asia",
+        "Leading enterprise sales and GTM expansion",
+        "Managing enterprise accounts in BFSI and retail",
+        "Revenue leadership",
+        "SaaS GTM",
+        "Customer-led growth",
+        "Team building",
+        "Pipeline discipline",
+        "Trust, coaching, consistency",
+        "Cricket as leadership metaphor"
+      ],
+      "weak_signals": [
+        "India’s SaaS ecosystem trend",
+        "India vs Australia cricket match interest",
+        "Positive discovery call",
+        "Nurture relationship before follow-up"
+      ],
+      "signals_to_avoid": []
+    },
+    "search_queries": [
+      "Premium executive leather portfolio gift set product page India INR 3000-5000",
+      "Custom engraved business card holder and notebook set buy online India INR 3000-5000",
+      "Cricket-inspired executive desk organizer gift set product page India INR 3000-5000",
+      "cricket ball inspired card holder product page India INR 3000 5000",
+      "luxury cricket themed corporate gift product India INR 3000 5000",
+      "premium cricket corporate gift set product page India INR 3000 5000",
+      "buy online executive gift set for VP Sales role 3000-5000 INR India",
+      "product page premium corporate gift for revenue leadership team 3000-5000 INR India",
+      "gift set cricket-inspired sales leadership gift 3000-5000 INR India",
+      "premium executive gift set for VP Sales buy online product page INR 3000 5000 India",
+      "customized desk accessory gift set for sales leader buy online INR 3000 5000 India",
+      "luxury business gift set for sales executive 3000-5000 INR product page India",
+      "high-end corporate gift set for sales VP India buy online INR 3000 5000"
+    ],
+    "raw_products": [
+      {
+        "name": "Premium Tan Leather Executive Gift Set",
+        "url": "https://artboxsolutions.com/products/premium-tan-leather-executive-gift-set",
+        "price": null,
+        "currency": null,
+        "store": "artboxsolutions.com",
+        "description": "Artbox Business Solutions Pvt Ltd\nArtbox Business Solutions Pvt Ltd\nArtbox Business Solutions Pvt Ltd\nDIAA Artbox\n\n### Search our store\n\nArtbox Business Solutions Pvt Ltd\nDIAA Artbox\n\n# Premium Tan Leather Executive Gift Set\n\nCouldn't load pickup availability\n\n### Ask a Question\n\n\\ Required fields\n\nEstimated Delivery:Jul 06 - Jul 10\n\nPremium Tan Leather Executive Gift Set\nPremium Tan Leather Executive Gift Set\n\n### Premium Tan Leather Executive Gift Set\n\nA luxurious and professional gift set featuring a premium tan leather notebook, a matching metal-body pen, and a stylish leather keychain. Designed to impress, this set blends elegance with everyday functionality—perfect for corporate events, onboarding kits, and client gifting. [...] Includes: Premium notebook, metal pen, leather keychain",
+        "country": "India"
+      },
+      {
+        "name": "Buy Luxury Corporate Gifts Online in India | Luxury Leather Gifts - Knights and Walker",
+        "url": "https://www.knightsandwalker.com/pages/corporate-gifts",
+        "price": null,
+        "currency": null,
+        "store": "knightsandwalker.com",
+        "description": "(3)\n\n \n\n#color_navy blue#color_navy blue\n\nThe Westbourne Backpack Sale priceRs. 19,800.00\n\n \n\n#color_ruby redKnights and Walker ruby red passport holder #color_ruby red\n\nWestminster Passport Holder Sale priceRs. 3,800.00\n\n(3)\n\n \n\n#color_black#color_black\n\nWestminster Bifold Wallet, 3cc + Coin Pouch, Compact Sale priceRs. 4,800.00\n\n    \n\nView all\n\nSelect few products we have custom manufactured for our clients.\n\n## PREVIOUS COLLABORATIONS\n\n\n\n\n\nKnights & Walker 2026 Corporate Catalogue\n\n2026 Edition\n\n## The Corporate Catalogue\n\nOur complete corporate range — leather goods, writing instruments and gift sets — with specifications, customisation options and packaging details.\n\nDownload the Catalogue\n\nPDF · 2026 edition\n\nClient Testimonials\n\n## Trusted Across Continents\n\n“ [...] At Knights & Wal",
+        "country": "India"
+      },
+      {
+        "name": "Leather Corporate Gifts Manufacturer | Custom Business Gifts",
+        "url": "https://apexleathergoods.com/leather-corporate-gifts-manufacturer",
+        "price": null,
+        "currency": null,
+        "store": "apexleathergoods.com",
+        "description": "Apex Leather Goods is a trusted leather corporate gifts manufacturer, specializing in premium, handcrafted business gifts such as leather portfolios, executive folders, desk organizers, cardholders, keychains, and branded gift sets. We offer custom designs, private labeling, and global shipping for corporate gifting, promotional campaigns, and premium client giveaways. With expert craftsmanship and top-grade materials, our bespoke leather gifts ensure elegance, durability, and exclusivity. Elevate your corporate gifting with custom-made leather gifts designed to impress.\n\n## Global Leather Corporate Gifts Manufacturer Since 2003\n\n### Crafting Memorable Gifts for Global Brands [...] As a leading leather corporate gifts manufacturer, Apex Leather Goods offers an extensive range of premium le",
+        "country": "India"
+      },
+      {
+        "name": "Amazon.in : leather portfolio",
+        "url": "https://www.amazon.in/leather-portfolio/s?k=leather+portfolio",
+        "price": null,
+        "currency": null,
+        "store": "amazon.in",
+        "description": "## Premium Leather folders for documents a4 Size & Legal Size, Waterproof documents Organizer, Professional Portfolio with Zip, 20 Leaf Files for certificates and documents,Includes Stylus Pen.\n\nSponsored Ad - NISUN PU Leather 4 Ring Professional File Folder for Documents Certificates, Conference Folder, File with 2...\nMore like this\nMore like this\n\n## NISUN PU Leather 4 Ring Professional File Folder for Documents Certificates, Conference Folder, File with 20 Leafs - Black\n\n## More results\n\nMore like this\nMore like this\nKAANUKA PU Leather Executive Portfolio File Folder – Legal Size Document Holder with 20 Leafs/Pockets, Certificate Organiz... [...] Bazaar\nOfficial brand Page\nFEDUS Files for Documents 10 Leafs Foolscap Size (Bigger Than A4 Size) 4 Ring File with Hidden Handle Multipurpose ",
+        "country": "India"
+      },
+      {
+        "name": "Luxury Corporate Gifts With Logo Customization | luxury corporate gifts",
+        "url": "https://www.leathertalks.com/collections/ready-to-ship-dispatch-luxury-corporate-gifts-with-logo-customization",
+        "price": null,
+        "currency": null,
+        "store": "leathertalks.com",
+        "description": "Leather Talks\n\nReady to Ship Luxury Corporate Gifts - Men's Wallet and Belt Gift Set Sale priceRs. 3,995.00\n\n \n\nGreat Dane | Pure Leather Wallet for Men | 100% Genuine Leather | Lifetime Warranty | Color: BrownGreat Dane | Pure Leather Wallet for Men | 100% Genuine Leather | Lifetime Warranty | Color: Black\n\nLeather Talks\n\nReady to ship Luxury Corporate Gift | Great Dane | Leather Belt, Wallet Set for Men | Color: Blue Sale priceRs. 3,595.00\n\n \n\nBrown color with croco tail patternComes with desktop watch and slip tray\n\nLeatherTalks\n\nDesktop Accessory Set I | Leather Desk Organizer | Leather Desk Accessories | Crocotail Embossed Genuine Leather | Color - Brown Sale priceRs. 2,995.00 [...] Leather Talks\n\nMelunge Genuine Leather Notebook | Luxury Leather Diary & Planner for Men & Women | Hand",
+        "country": "India"
+      },
+      {
+        "name": "Personalized Leather Portfolios & Padfolios | Leatherology",
+        "url": "https://www.leatherology.com/collections/leather-portfolios",
+        "price": 225.0,
+        "currency": "USD",
+        "store": "leatherology.com",
+        "description": "4.9\n\n### Executive Zippered Portfolio\n\n$225\n\nNavy Blue color\nBlack Onyx color\nCognac color\nCamel color\n\n+ 2\n\nGusseted-Document-and-Laptop-Holder-Blue-849-375\nGusseted-Document-and-Laptop-Holder-Blue-849-375-1\n\n4.9\n\n### Gusseted Document and Laptop Holder\n\n$160\n\nNavy Blue color\nBlack Onyx color\nCognac color\nBordeaux color\n\n+ 1\n\nLaptop-Envelope-Sleeve-Black-048-355\nLaptop-Envelope-Sleeve-Black-048-355-On-figure\n\n4.9\n\n### Laptop Envelope Sleeve\n\n$210\n\nBlack Croc color\nTan color\nForest Croc color\nBlack color\nTech-Folio-Black-784-135\nTech-Folio-Black-784-135-1\n\n4.8\n\n### Tech Folio\n\n$230\n\nBlack Onyx color\nCognac color\nNavy Blue color\nBrown color\nExecutive-Zippered-Portfolio-Brown-649-340\nExecutive-Zippered-Portfolio-Brown-649-340-1\n\n4.9\n\n### Executive Zippered Portfolio\n\n$225 [...] Deluxe-Folio-",
+        "country": "India"
+      },
+      {
+        "name": "Leather Gift Sets Archives - Corporate Gifts & Customized Branding Solutions",
+        "url": "https://giftsmandi.com/product-category/table-tops/leather-corporate-gifts/leather-gift-sets",
+        "price": null,
+        "currency": null,
+        "store": "giftsmandi.com",
+        "description": "Leather Gift Sets Archives - Corporate Gifts & Customized Branding Solutions\n\nSkip to navigation Skip to content\n\n+91 97113 99839   giftsmandi.ent@gmail.com\n\n✦ Premium B2B Gifting Pan India Delivery\n\nGiftsmandi Enterprises Giftsmandi \n\nWelcome Kit   Diwali Gifts\n\n## Leather Gift Sets\n\n Leather Corporate Gifts, Leather Gift Sets## 4 In 1 Combo Gift Sets\n\n  4 In 1 Combo Gift Sets\n\n  Leather Corporate Gifts, Leather Gift Sets## 4 In 1 Combo Gift Sets\n\n  0 out of 5\n\n  (0)\n\n  SKU: n/a\n\n  Read more\n Leather Corporate Gifts, Leather Gift Sets## 4 IN 1 Corporate Gift Sets\n\n  4 IN 1 Corporate Gift Sets\n\n  Leather Corporate Gifts, Leather Gift Sets## 4 IN 1 Corporate Gift Sets\n\n  0 out of 5\n\n  (0)\n\n  4 IN 1 Corporate Gift Sets\n\n  SKU: n/a",
+        "country": "India"
+      },
+      {
+        "name": "Leather Portfolio Bag | Genuine Leather Office & Laptop Bag for Men",
+        "url": "https://www.leathertalks.com/products/ready-to-ship-luxury-corporate-gift-smith-leather-portfolio-bag-premium-genuine-leather-office-bag-for-men-business-laptop-briefcase-color-black",
+        "price": null,
+        "currency": null,
+        "store": "leathertalks.com",
+        "description": "HOME DECOR & LIFESTYLE ACCESSORIES\n WATCH CASES & WATCH BOXES \n\n  WATCH BOX5 SLOT WATCH BOX8 SLOT WATCH BOX10 SLOT WATCH BOXGALIO 8 SLOT WATCH BOXVALET BOX\n POKER BOX\n OTHER STORAGE BOXES\n HOME DECOR / ACCENTS\n VALET TRAY, CATCHALL & NIGHT STAND BOXES\n LEATHER BARWARE\n POCKET CHANGER\n\n LUXURY CORPORATE GIFTS \n\n  LUXURY CORPORATE GIFTSREADY-TO-SHIP LUXURY CORPORATE GIFTSLUXURY CORPORATE GIFTS FOR CEO, VIPsCORPORATE GIFTS FOR CLIENTSLUXURY GIFTS FOR ARCHITECT/DESIGNER/INTERIORCORPORATE DIWALI GIFTS FOR EMPLOYEESNEW YEAR CORPORATE GIFTSCORPORATE GIFTS FOR WOMEN'S DAYMOTHER'S DAY GIFTSCASE STUDIES\n LUXURY WEDDING GIFTING \n\n  LUXURY WEDDING GIFTINGWEDDING GIFTS FOR GROOM/MENWEDDING GIFTS FOR BRIDE/WOMENWEDDING COUPLE GIFT SET\n GIFT SETS \n\n  GIFT SETSBELT WALLET SET\n OCCASION BASED GIFTING [...]",
+        "country": "India"
+      },
+      {
+        "name": "Buy Business Card Holders Online at Best Prices in India- ...",
+        "url": "https://www.amazon.in/Business-Card-Holders/b?ie=UTF8&node=3591173031",
+        "price": 299.0,
+        "currency": "INR",
+        "store": "amazon.in",
+        "description": "₹299.00₹299.00\n\n  ₹1,122.00\n\n  H7 Haven Custom Engraved Business Card Holder with Logo & Name | Personalized Metal Visiting Card Case | Custom Company Logo Wallet | Holds 8-12 Cards | Professional Gift (Black)\")\n DECORAGE Luxury Natural Marble Card Holder for Desk (3 x 2 x 1.5 Inch) | Handcrafted Visiting Card Stand Organizer | Elegant Office Desk Accessory for Home & Reception | Handcrafted Visiting Card Stand Organizer | Elegant Office Desk Accessory for Home & Reception\")  Quick look \n\n  ₹280.00₹280.00\n\n  ₹1,299.00\n\n  DECORAGE Luxury Natural Marble Card Holder for Desk (3 x 2 x 1.5 Inch) | Handcrafted Visiting Card Stand Organizer | Elegant Office Desk Accessory for Home & Reception | Handcrafted Visiting Card Stand Organizer | Elegant Office Desk Accessory for Home & Reception\") [...] ",
+        "country": "India"
+      },
+      {
+        "name": "Amazon.in",
+        "url": "https://www.amazon.in/Business-Card-Holders/s?rh=n%3A3591173031%2Cp_36%3A300000-999900&page=2",
+        "price": 8445.93,
+        "currency": "INR",
+        "store": "amazon.in",
+        "description": "4.84.8 out of 5 stars) (96)\n\nPrice, product page₹8,445.93₹8,445.93\n\nNo Cost EMI available on select cards.\n\nFREE delivery Thu, 16 Jul\n\nMore Buying Choices  \n₹8,395.93(2 new offers)\n\n Previous\n 1\n 2\n 3\n64 Next\n\n## Need help?\n\nVisit the help section or contact us\n\nSponsored\n\nGo back to filtering menu\n\nSkip to main search results\n\nSelected filters: Business Card Holders, ₹3,000–₹9,999\n\n## Filters\n\nEligible for Free Shipping\n\n  Free Shipping\n\n  Get FREE Shipping on eligible orders shipped by Amazon\n\nCategory\n\n  Office Products\n\n+ Office Supplies\n\n- Desk Accessories & Storage Products\n\n Business Card Holders\n\nCustomer Reviews\n\n  4 Stars & Up\n\nPrice\n\nReset price range\n\nClear\n\n  Up to ₹1,000\n  ₹1,000 - ₹2,000\n  ₹2,000 - ₹2,900\n  ₹2,900 - ₹5,000\n  Over ₹5,000\n \n\nDeals & Discounts [...] Price, prod",
+        "country": "India"
+      },
+      {
+        "name": "Exclusive 4-in-1 Custom Notebook Gift Set for Corporate Gifting",
+        "url": "https://www.druckeninventiveindia.com/4-in-1-notebook-gift-set",
+        "price": null,
+        "currency": null,
+        "store": "druckeninventiveindia.com",
+        "description": "820 Brown Mix\n\n## Brown 4-in-1 Notebook Gift Set CG 820\n\n## 4-in-1 Notebook Gift Set\n\nCustomize every element of the 4-in-1 Corporate Gift Set to reflect the branding of your company. You can imprint your logo on the notebook, engrave your logo on the pen, customize the keychain, and the card holder. Be confident that your company will standout amongst your competitors. [...] ## Drucken Inventive India Pvt. Ltd.\n\nOffice : D-48, Kiran Garden, Nawada,  \n              Near Metro Pillar No 714,  Uttam Nagar,   \n              New Delhi-110059. INDIA  \nMob.:    +91-955511 1984  \n              +91-958260 1984   \nEmail : marketing@druckeninventiveindia.com   \n             druckeninventiveindia@gmail.com\n\n## Quick Links\n\n About Us\n Corporate Gifts\n Branding\n Printing\n Catalogues\n Contact Us\n\n## Top",
+        "country": "India"
+      },
+      {
+        "name": "Personalized - Business Card Holder - Lemonade India",
+        "url": "https://lemonadeindia.com/products/personalized-business-card-holder",
+        "price": 1999.0,
+        "currency": "INR",
+        "store": "lemonadeindia.com",
+        "description": "Skip to product details  \n\n## Your cart is empty\n\n Continue shopping \n\nHave an account?\n\nLog in to check out faster.\n\n## Your cart\n\n## Estimated total\n\nRs. 0.00\n\nTaxes included. Discounts and shipping calculated at checkout.\n\n❖ COD Now Available\n\n❖ Free shipping on all orders above ₹1999\n\n❖Ships in 6–10 working days\n\n❖ Low to No MOQ\n\n❖ 50,000+ gifts delivered\n\n❖ COD Now Available\n\n❖ Free shipping on all orders above ₹1999\n\n❖Ships in 6–10 working days\n\n❖ Low to No MOQ\n\n❖ 50,000+ gifts delivered\n\n❖ COD Now Available\n\n❖ Free shipping on all orders above ₹1999\n\n❖Ships in 6–10 working days\n\n❖ Low to No MOQ\n\n❖ 50,000+ gifts delivered\n\n❖ COD Now Available\n\n❖ Free shipping on all orders above ₹1999\n\n❖Ships in 6–10 working days\n\n❖ Low to No MOQ\n\n❖ 50,000+ gifts delivered\n\n❖ COD Now Available [...] ",
+        "country": "India"
+      },
+      {
+        "name": "Premium silver Metal Visiting Card Holder with Engraving",
+        "url": "https://verveet.com/products/premium-silver-metal-visiting-card-holder-with-engraving-elegant-business-card-holder-for-professionals-copy",
+        "price": null,
+        "currency": null,
+        "store": "verveet.com",
+        "description": "Skip to content \n\n Facebook\n Instagram\n YouTube\n X (Twitter)\n\nGet fast shipping on all orders at no extra cost!\n\nPersonalize your gifts with our customizable products!\n\nBuy Smart Business Card, USE Code \"VERVEET\" during checkout\n\nSpecial discounts available for bulk corporate orders!\n\nLog in\n\n X (Twitter)\n Facebook\n Instagram\n YouTube\n\n  Verveet India\n\nLog in  Cart\n\n  \n\n## Item added to your cart\n\nView cart\n\nSkip to product information \n\n \n\n1  /  of 1\n\n# Premium silver Metal Visiting Card Holder with Engraving – Elegant Business Card Holder for Professionals\n\n## Premium silver Metal Visiting Card Holder with Engraving – Elegant Business Card Holder for Professionals\n\nRegular price  Rs. 1,900.00\n\nRegular price   Sale price  Rs. 1,900.00\n\nUnit price  /  per\n\n Sale   Sold out [...] Perfect fo",
+        "country": "India"
+      },
+      {
+        "name": "Corporate Gift Set - Premium Combo Notebook Pen ... - Minura Group",
+        "url": "https://www.minuragroup.com/corporate-gift-set.html",
+        "price": null,
+        "currency": null,
+        "store": "minuragroup.com",
+        "description": "Versatile Essentials: These four items—an A5 notebook, pen, keychain, and business card holder—are all essential tools for the modern lifestyle, offering both practicality and a refined sense of style for everyday use. [...] 4. Visiting Card Holder  \n   Make a lasting first impression with the SBI Visiting Card Holder. This compact, stylish holder is crafted from premium materials to protect your business cards in style. With its sleek design and durable construction, it’s the perfect way to present your cards at business meetings, networking events, or conferences. Ensure your cards remain crisp and presentable, all while adding a touch of professionalism to your interactions. [...] Passport & Document Holders: Travel in style with our Passport & Document Holders, available for delivery a",
+        "country": "India"
+      },
+      {
+        "name": "Corporate Gift Sets - White 5-1 Diary,Card Holder, Keychain Pen ...",
+        "url": "https://www.ushaprintings.in/corporate-gift-sets.html",
+        "price": 460.0,
+        "currency": "INR",
+        "store": "ushaprintings.in",
+        "description": "Yes! I am interested\n\n### Brown DIARY 4-1 COMBO SET Diary, Pen,Keychain & CardHolder- Corporate Gift, Customize Executive Gift\n\nGet Best Quote\n\nRequest Callback\n\n₹ 460 / Piece Get Latest Price\n\nProduct Brochure\n\n|  |  |\n --- |\n| Product Type | Corporate Gifts Set |\n| Material | Leather |\n| Brand | Usha Printings |\n| Shape | Rectangular |\n| Country of Origin | Made in India |\n| Color | Black | [...] Yes! I am interested\n\n### Black DIARY 4-1 COMBO SET Diary, Pen,Keychain & CardHolder- Corporate Gift, Customize Executive Gift\n\nGet Best Quote\n\nRequest Callback\n\n₹ 350 / Piece Get Latest Price\n\nProduct Brochure\n\n|  |  |\n --- |\n| Product Type | Corporate Gifts Set |\n| Material | Leather |\n| Color | Black |\n| Brand | Usha Printings |\n| Shape | Rectangular |\n| Country of Origin | Made in India | [.",
+        "country": "India"
+      },
+      {
+        "name": "180 Pocket Business Card Holder With Case",
+        "url": "https://www.worldoneindia.in/business-card-holders.html",
+        "price": null,
+        "currency": null,
+        "store": "worldoneindia.in",
+        "description": "Get Best Quote\n\nA4 Expanding Portfolio Folder(CA608)\n\nA4 Expanding Portfolio Folder(CA608)\n\nGet Best Quote\n\nA4 Conference Folders(CA612)\n\nA4 Conference Folders(CA612)\n\nGet Best Quote\n\nA4 Conference Folders(CA616)\n\nA4 Conference Folders(CA616)\n\nGet Best Quote\n\nId Card Holder\n\nId Card Holder\n\nGet Best Quote\n\nView All Products\n\nTell Us What Are You Looking For ?\n\n  \n  \n  \n  \n\nReach Us\n\nWorldone (Manager)  \n\nWorldone Brand Of Arora Gifts Private Limited  \nH-1363, DSIDC, Narela Industrial Park Narela, Narela  \n New Delhi - 110040, Delhi, India\n\nGet Directions\n\n  \n\nCorporate VideoCorporate Brochure\n\nCall Us  \nCall Response Rate: 59%\n\nShare Us\n\nFacebook Twitter LinkedIn\n\n  \n  \n\nSend E-mail [...] With the help of our team of adroit professionals, we have become a reliable manufacturer, trader supp",
+        "country": "India"
+      },
+      {
+        "name": "VistaPrint Official Website: Online Printing Services",
+        "url": "https://www.vistaprint.com",
+        "price": null,
+        "currency": null,
+        "store": "vistaprint.com",
+        "description": "## Made by you, #MadeWithVistaPrint\n\nWe love to see your custom creations. Post a photo on social media and add @VistaPrint and #MadeWithVistaPrint for a chance to be featured here.\n\nCustom Post-it Notes®\nSpot UV\nWedding Invitations\nAcrylic Table Signs\nNote Cards\nCustom Notebooks\nJewelry Tags\nSquare Business Cards\nStandard Business Cards\nStandard Business Cards\nRounded Corner Business Cards\nStandard Postcards\nVistaPrint® Design Wrap Ballpoint Pen\nCustom Mailer Boxes\nDie-Cut Sticker Singles\nFood Packaging Labels\nCustom Thank You Cards\nTable Runners\nAcrylic Table Signs\nDie-Cut Sticker Singles\n\n## VistaPrint: Here for small business since 1995.\n\n### Easy Design\n\nOur online tools make the process as simple and clear as possible, and we’re working to improve your experience all the time. [...] ",
+        "country": "India"
+      },
+      {
+        "name": "**A complete corporate set, Laser engraved ... - Instagram",
+        "url": "https://www.instagram.com/reel/DRPUpd3jKBd",
+        "price": null,
+        "currency": null,
+        "store": "instagram.com",
+        "description": "We provide custom logo engraving for business gift, with ODM customization available for different brands and projects. From pens to premium pen",
+        "country": "India"
+      },
+      {
+        "name": "3 In 1 Cricket Theme Desk Organizer With Clock - OffiStore",
+        "url": "https://offistore.in/product/3-in-1-cricket-theme-desk-organizer",
+        "price": 42.0,
+        "currency": "INR",
+        "store": "offistore.in",
+        "description": "+ Sale!\n\n    OS173 Premium Gradient Executive Metal Pen Quick View\n  + ## OS173 Premium Gradient Executive Metal Pen\n  + ~~₹42.00~~ Original price was: ₹42.00.₹16.00Current price is: ₹16.00.\n\n   Request Quote WhatsApp\n 3 In 1 Corporate Gift Set – Premium Business Gifting Solution3 In 1 Corporate Gift Set – Premium Business Gifting Solution Quick View\n\n  + Sale!\n\n    3 In 1 Corporate Gift Set – Premium Business Gifting Solution3 In 1 Corporate Gift Set – Premium Business Gifting Solution Quick View\n  + ## 3 In 1 Corporate Gift Set – Premium Business Gifting Solution\n  + ~~₹525.00~~ Original price was: ₹525.00.₹350.00Current price is: ₹350.00.\n\n   Request Quote WhatsApp\n\n## Best Corporate Gifting Company in India\n\nFrom Meeting Rooms to Individual Desks - OffiStore’s Gifts Fit Everywhere [...",
+        "country": "India"
+      },
+      {
+        "name": "Executive Advocate Desk Organizer Corporate Gift Set - Giftana India",
+        "url": "https://www.giftanaindia.com/product/corporate-gifts/executive-advocate-desk-organizer-corporate-gift-set",
+        "price": null,
+        "currency": null,
+        "store": "giftanaindia.com",
+        "description": "This elegant personalized combo includes a desk organizer with clock, customized metal pen, ADV logo steel mug, and coaster, making it ideal for employee",
+        "country": "India"
+      },
+      {
+        "name": "Buy Executive Desk Set Online In India - Etsy",
+        "url": "https://www.etsy.com/in-en/market/executive_desk_set",
+        "price": null,
+        "currency": null,
+        "store": "etsy.com",
+        "description": "Personalized MDF executive desk set with leather covering, name plate, pen holder and card holder. Luxury office gift for professionals.",
+        "country": "India"
+      },
+      {
+        "name": "Analog Antique The Multi Desk Organizer With Cricket Design for ...",
+        "url": "https://www.indiamart.com/proddetail/the-multi-desk-organizer-with-cricket-design-21631570597.html",
+        "price": 555.0,
+        "currency": "INR",
+        "store": "indiamart.com",
+        "description": "Zegar Gifts Private Limited - Offering Analog Antique The Multi Desk Organizer With Cricket Design for Office at ₹ 555/piece in Rajkot, Gujarat.",
+        "country": "India"
+      },
+      {
+        "name": "Cricket Themed Desk Organizer (Customizable) (168mm x 65mm x ...",
+        "url": "https://jovialsub.com/product/corporate-gifting/desk-organizer/sport/the-cricket-themed-desk-organizer-customizable-168mm-x-65mm-x-107mm",
+        "price": null,
+        "currency": null,
+        "store": "jovialsub.com",
+        "description": "Features a stylish cricket motif—perfect. Sized at 168 x 65 x 107 mm, ... Holds pens, cardholder and other office essentials with ease. Ideal Gift Option:",
+        "country": "India"
+      },
+      {
+        "name": "Over ₹4100 - Desk Accessories & Storage Products / Office Supplies",
+        "url": "https://www.amazon.in/Desk-Accessories-Storage-Products-Office-Supplies/s?rh=n%3A3591066031%2Cp_36%3A410000-&hidden-keywords=Men",
+        "price": 4100.0,
+        "currency": "INR",
+        "store": "amazon.in",
+        "description": "Online shopping for Office Products from a great selection of Desk Supplies, Organisers & Dispensers, Over ₹5,000 & Up All Discounts Results. Gift Set ₹6,",
+        "country": "India"
+      },
+      {
+        "name": "Personalized 7-in-1 Desk Organizer Set by Giftana\n – Giftana",
+        "url": "https://giftana.com/products/personalized-7-in-1-desk-organizer-set-with-diary-flask-bottle-500ml-pen-drive-mobile-stand-card-holder-keychain-black",
+        "price": 500.0,
+        "currency": "INR",
+        "store": "giftana.com",
+        "description": "### Shipping Information\n\n### Return & Refund Policy\n\n### Product Information\n\n### Personalization Details\n\n### Corporate Gifts & Bulk Orders\n\n## Customer Reviews\n\n### Frequently Bought together\n\n### Recently Viewed Products\n\n### Most searched Collections\n\n## Contact\n\nFor Bulk Order : corporategifts@giftana.com\n\n(+91) 83699 81329\n\nsupport@giftana.com\n\n## Gifts By\n\n## Useful Links\n\n## Customer Service\n\n## Follow Us\n\n## Newsletter Sign Up\n\nReceive our latest updates about our products and promotions.\n\n© 2024 All Rights Reserved. Giftana India Pvt. Ltd.\n\nAll Brand names, logos, trademarks, and certain artworks are the property of their respective owners.\n\nThanks for subscribing!\n\nThis email has been registered!\n\n## Shop the look\n\n## Choose options\n\n##### \n\n##### Edit option [...] ## Choose op",
+        "country": "India"
+      },
+      {
+        "name": "Desktop Accessory Set | Office Desk Organizer",
+        "url": "https://www.leathertalks.com/products/luxury-corporate-gift-desktop-accessory-set-i-luxury-leather-work-desk-accessories-leather-desk-organizer-accessories-for-office-desk-crocotail-brown",
+        "price": null,
+        "currency": null,
+        "store": "leathertalks.com",
+        "description": "For Bulk Inquiries - 📞 8697326921 | 📧support@leathertalks.com\n\nIndia\n\nCountry [...] IMPORTANT LINKS\n\nMAIN MENU\n\nLegal\n\nNewsletter\n\nSign up to our newsletter to receive exclusive offers.\n\nIndia\n\nCountry [...] Country",
+        "country": "India"
+      },
+      {
+        "name": "Executive Desk Organizer Set - Feature: Durable | Good Luck File",
+        "url": "https://www.tradeindia.com/products/executive-desk-organizer-set-c10391194.html",
+        "price": null,
+        "currency": null,
+        "store": "tradeindia.com",
+        "description": "Product Specifications ; Material, Leather ; Size, Standard ; Cover, High-quality faux leather with contrast stitching for a refined look ; Shape, Rectangular,",
+        "country": "India"
+      },
+      {
+        "name": "Cricket Ball Inspired Card Holder with Stitched Pattern - Voganow",
+        "url": "https://www.voganow.com/products/cricket-ball-inspired-card-holder-with-stitched-pattern",
+        "price": 4999.0,
+        "currency": "INR",
+        "store": "voganow.com",
+        "description": "Ask a question   Share\n\nCricket Ball Inspired Card Holder with Stitched Pattern\n\n### Cricket Ball Inspired Card Holder with Stitched Pattern\n\nRegular price  ₹ 4,999\n\nSale price  ₹ 4,999  Regular price  ~~₹ 4,999~~\n\nUnit price\n\n/\n\n## You Might Also Like\n\n## Recently Viewed Products\n\nShape: Rapid [...] BRUNE & BARESKIN\n\n SKU:\n\n  VNCH-147-01-GL\\_FS\n\nProducts on Sale or Promotions cannot be refunded but exchange only\n\nRegular price  ₹ 4,999\n\nSale price  ₹ 4,999  Regular price  ~~₹ 4,999~~\n\nUnit price\n\n/\n\n(Inclusive of all Taxes)\n\nproducts.product.pickup\\_availability.unavailable\n\nSTILL CONFUSED? SPEAK TO OUR STYLIST\n\n Contact Us on Whatsapp WHATSAPP\n Contact Us On Call CALL\n\nDescription\n\nOur Cricket Ball Inspired Card Holder is a perfect accessory for any occasion. Crafted with the highest-qua",
+        "country": "India"
+      },
+      {
+        "name": "[PDF] 1.3: Curriculum Enrichment - Gitarattan International Business School",
+        "url": "https://gitarattan.edu.in/wp-content/uploads/2024/12/E6-Part-15.pdf",
+        "price": null,
+        "currency": null,
+        "store": "gitarattan.edu.in",
+        "description": "whereas 32 respondents were in favour of dinner for making the order online food. Least preferred option for online breakfast and drinks. Perhaps executives from corporate /offices , students and other like housewives preferred to order food online on mid of the day. 10 53 32 5 Number of Respondents Breakfast Lunch Dinner No meal, only drinks 21 17 3) How much money do you spent on an average in a month on online food? Particulars Number of Respondents Less than 2000 10 2000-3000 20 3000-5000 40 5000-9000 25 More than 9000 5 Total 100 40 respondents spent on an average 3000 to 5000 in a month on online food ordering whereas 20 respondents for 2000-3000 and minimum respondents were in the category of who spent more than 9000 and less than 2000 on an average in a month. Less than 2000, 10 [.",
+        "country": "India"
+      },
+      {
+        "name": "[PDF] YES Foundation Grants and Accelerator Program",
+        "url": "https://www.yesfoundation.in/pdf/grant-accelerator-program.pdf",
+        "price": 3000.0,
+        "currency": "INR",
+        "store": "yesfoundation.in",
+        "description": "90.9% YES Not sure 3% Dugwells 48.5% Borewells 42.4% Small ponds 6.1% YES Foundation Grant & Accelerator Programme p.58 1 more season of crop 57.6% Productivity growth of all-year crop 21.2% 2 more seasons of crop 12.1% Productivity growth but no extra season 6.1% No increase 3% 0 5 10 15 0-500 500-1000 1000-2000 2000-3000 3000-5000 More than 5000 Can't really calculate Total direct beneficiaries 1088 Total indirect beneficiaries 6450 Total volume of water harvesting through this 12.55 Cr L No of villages impacted 53 2. Socio-economic indicators Irrigation facilities Before the intervention, more than 75% of the respondents said that they were dependent solely on rainfed agriculture, that is, rain acting as the only water source for crops sown in an agricultural field. Post the [...] Incre",
+        "country": "India"
+      },
+      {
+        "name": "Customized Wallet For Men - Cricket Collection - The Junket",
+        "url": "https://thejunket.in/products/customized-wallet-for-men-cricket-collection",
+        "price": 100.0,
+        "currency": "INR",
+        "store": "thejunket.in",
+        "description": "WOMENS WALLET\n  +  \n\n    PRINTED WOMENS WALLET\n  +  \n\n    MIA CROSS BODY BAGS\n  +  \n\n    MONEY CLIPPER\n  +  \n\n    CARD HOLDER\n GIFT HAMPERS\n\n  +  \n\n    GIFT HAMPERS & COMBOS\n  +  \n\n    GIFTS UNDER 499\n  +  \n\n    GIFTS UNDER 999\n Gifts for Him\n Gifts for Her\n TRAVEL\n\n  +  \n\n    PASSPORT COVER\n  +  \n\n    TRAVEL FOLDER\n  +  \n\n    LUGGAGE TAG\n  +  \n\n    TRAVEL POUCH\n LIFESTYLE\n\n  +  \n\n    H2GO BOTTLES\n  +  \n\n    EYEWEAR CASE\n  +  \n\n    KEYCHAIN\n  +  \n\n    POUCH\n  +  \n\n    WIRE ORGANISER\n  +  \n\n    APPLE AIR TAGS\n STATIONERY\n\n  +  \n\n    DIARY\n  +  \n\n    PENCIL POUCH\n  +  \n\n    DOCUMENT FOLDER\n FOOTBALL COLLECTION\n CORPORATE ORDERS\n Customer Reviews\n\n 0\n\n### Offers\n\n#### Use Code JUNKET100\n\nGet Rs. 100 off on orders above Rs. 999\n\nJUNKET100\n\n#### Free Keychain [...] Skip to content     \n\nThis st",
+        "country": "India"
+      },
+      {
+        "name": "[PDF] Annual Report 2014-2015 Santiniketan 2015 - Visva Bharati",
+        "url": "https://www.visvabharati.ac.in/file/Visva%20Bharati%20Annual%20Report%202014-15.pdf",
+        "price": null,
+        "currency": null,
+        "store": "visvabharati.ac.in",
+        "description": "iii. Sponsoring Agencies : Visva-Bharati (Partial Research Grant Scheme) iv. Amount Sanctioned : Yearly vary (Rs. 3000-5000/-) v. Duration of the project : One year 6. Extension activities/NSS/Cultural and other activities organised by the Department and participated by the Staff / Teachers and students of the Department. : N. A. [...] Rivu Sanyal (PhD scholar of Dr. Amit K. Biswas) 1. MGNREGS: ACRITICAL STUDY. Published at-International Research Journal of Management Sociology & Humanity (IRJMSH), Volume 5 Issue 4 (April, 2014) ISSN 2277-9809, Page-174-186.\n2. ROLE OF MGNREGS IN WOMEN EMPOWERMENT IN INDIA. Published at- International Research Journal of Commerce Arts and Science (CASIRJ), Volume 5 Issue 4 (2014) ISSN 2319-92, Page-178-197.\n3. Impact of MGNREGS on Migration and Emancipatio",
+        "country": "India"
+      },
+      {
+        "name": "[PDF] Technical Textiles Industry in India",
+        "url": "https://www.texmin.gov.in/static/uploads/2025/06/641c8fe7479d633ecdcb48b64ab8a1ad.pdf",
+        "price": 3539.0,
+        "currency": "USD",
+        "store": "texmin.gov.in",
+        "description": "3000 per employee to the companies to reimburse the cost incurred in skill upgradation and training the local manpower. The subsidy shall be Rs. 5000 per employee for units employing more than 1000 persons Quality 20 percent subsidy will be Reimbursement of 50 5 percent up to development offered by state percent of cost up to a Rs. 1 Crore for 5 and R&D government for the annual limit of a maximum of Rs. years per support expenditure of the firm on design and product development expenditure limited to a maximum subsidy of Rs. 2 Lakhs per year 5 Lakhs for expenses incurred in securing registration of patent Reimbursement for expenditure incurred in Quality Certification: laboratory for research and quality improvement Technical Textiles Industry in India: Opportunities and Challenges - 188 ",
+        "country": "India"
+      },
+      {
+        "name": "[PDF] Technical Textiles Industry in India - NTTM",
+        "url": "https://nttm.texmin.gov.in/pdf/MotDoc/Baseline_Survey_Technical_Textiles_Sector_20042022_mot.pdf",
+        "price": 363.74,
+        "currency": "USD",
+        "store": "nttm.texmin.gov.in",
+        "description": "support Financial assistance of up to 50 percent of the investment in technology development, subject to a maximum amount of Rs. 10 Lakhs per process/product will be offered to eligible units Rebate of 25 percent of the project expense subject to a cap of Rs 5 Lakhs to help business growth, branding and design Stamp duty exemption 100 percent reimbursement of the stamp duty/transfer duty paid during purchase of land 100 percent (75 percent in GB Nagar district) to developer and @50 percent to first buyer of plot/unit 100 percent exemption from stamp duty Skill support Training subsidy of Rs. 3000 per employee to the companies to reimburse the cost incurred in skill upgradation and training the local manpower. The subsidy shall be Rs. 5000 per employee for units employing more than 1000 [..",
+        "country": "India"
+      },
+      {
+        "name": "Sports Corporate Gifts Items Exporter from Gujarat, India",
+        "url": "https://www.rajkottrophies.com/sports-corporate-gifts-items-9495806.html",
+        "price": null,
+        "currency": null,
+        "store": "rajkottrophies.com",
+        "description": "Introducing the Cricketers Promotional Table Top Dasktop by Pooja Piru! Crafted from high-quality metal, this innovative Dasktop is designed to showcase your love for cricket while serving as a functional addition to your space. With its unique shape and sturdy construction, it's perfect for displaying promotional materials, trophies, or other cricket-related items.\n\nAvailable in a wide range of colors, you can choose the one that best suits your preferences or matches your branding. Whether you're setting up a sports-themed event, decorating your office, or simply adding a touch of cricket flair to your home, this versatile Dasktop is sure to impress. [...] Available in a spectrum of vibrant colors, it effortlessly complements any workspace or interior decor. Whether it's for office motiv",
+        "country": "India"
+      },
+      {
+        "name": "Corporate Gift 3k-4k",
+        "url": "https://mudramart.com/collections/corporate-gift-3k-4k",
+        "price": null,
+        "currency": null,
+        "store": "mudramart.com",
+        "description": "# Corporate Gift 3k-4k\n\n## Filters\n\n In stock (120)\n Out of stock (0)\n\n   Save up to 0%   Save %   Crystal Trophy- CRT 46\n\nOriginal price  Rs. 2,700.00  - Original price  Rs. 3,000.00\n\nOriginal price\n\nRs. 2,700.00 - Rs. 3,000.00\n\nRs. 2,700.00 - Rs. 3,000.00\n\nCurrent price  Rs. 2,700.00\n\n| /\n\n## Crystal Trophy- CRT 46\n\nOriginal price  Rs. 2,700.00  - Original price  Rs. 3,000.00\n\nOriginal price\n\nRs. 2,700.00 - Rs. 3,000.00\n\nRs. 2,700.00 - Rs. 3,000.00\n\nCurrent price  Rs. 2,700.00\n\n| /\n\nSave up to 0%   Save %\n\n   Save up to 0%   Save %   Crystal Trophy- CRT 6\n\nOriginal price  Rs. 2,920.00  - Original price  Rs. 3,640.00\n\nOriginal price\n\nRs. 2,920.00 - Rs. 3,640.00\n\nRs. 2,920.00 - Rs. 3,640.00\n\nCurrent price  Rs. 2,920.00\n\n| /\n\n## Crystal Trophy- CRT 6 [...] Original price\n\nRs. 3,000.00\n\nRs. ",
+        "country": "India"
+      },
+      {
+        "name": "Cricket corporate gift, cricket lovers gift, cricket tournament gift",
+        "url": "https://in.pinterest.com/pin/customized-cricket-tournament-gifts--337629303323350431",
+        "price": null,
+        "currency": null,
+        "store": "in.pinterest.com",
+        "description": "a gold clock sitting on top of a black table next to a red and white sign\n\n# Cricket corporate gift, cricket lovers gift, cricket tournament gift\n\nGIFTCENTRE9\n\n## Comments\n\n## More about this Pin\n\n### Board containing this Pin\n\nSelected board cover image\n\n### Related interests",
+        "country": "India"
+      },
+      {
+        "name": "Premium Corporate Gifts Above ₹5000 - Marsh Customized",
+        "url": "https://marshclothing.com/collections/corporate-gifts-above-rs-5000/corporate-gift",
+        "price": 5000.0,
+        "currency": "INR",
+        "store": "marshclothing.com",
+        "description": "##### Bulk T-Shirts & Winterwear\n\nCustom T-Shirt Printing Bangalore Bulk Round Neck Tees Manufacturers India Custom Hoodies Manufacturers Bangalore Corporate Jacket Printing in Karnataka Sweatshirt Suppliers for Tech Parks Bangalore Event T-Shirt Printing Bangalore\n\n##### Promotional & Sports Wear\n\nLow Range Promotional Polos Bangalore Budget Uniform Suppliers Hosur & Mysore Cheap Bulk Polo T-Shirts for Promotions Sports Jersey Manufacturers Bangalore Custom Sublimation Printing Karnataka Football & Cricket Jersey Kits Bangalore\n\n##### Institutional & Regional Bulk\n\nInstitutional Apparel Suppliers Bangalore College & School Uniform Manufacturers Karnataka Industrial Uniform Suppliers Hosur Branded Merchandise Mangalore & Hubli Premium Workwear Customization Bangalore [...] Sale\n MOKOBARA -",
+        "country": "India"
+      },
+      {
+        "name": "2-In-1 Cricket Theme Corporate Gift Set - IndiaMART",
+        "url": "https://www.indiamart.com/proddetail/2-in-1-cricket-theme-corporate-gift-set-2855887381830.html",
+        "price": 1499.0,
+        "currency": "INR",
+        "store": "indiamart.com",
+        "description": "Established in 2009, Minura Group is a prominent manufacturer and supplier of Acrylic Trophy, Sports Trophies, Star Trophies, Wooden Memento, Crystal Trophy, Crystal Memento and many more. These products are extremely praised inthe market owing to their precise dimensions, long lasting nature, outstanding designs, superior finish, light in weight and reasonable price. Our products are made using the industry approved material, which is procured from the reliable dealers of market. Moreover, our developed products undergo several stringent quality tests to make sure the quality and long lasting nature. We have appointed skillful team of professionals, who aid us in offering best quality products to our treasured patrons. Apart from this, our esteemed customer can buy these products in [...]",
+        "country": "India"
+      },
+      {
+        "name": "Creating this personalized cricket theme hamper from ... - Instagram",
+        "url": "https://www.instagram.com/reel/DYjUaUsoauM",
+        "price": null,
+        "currency": null,
+        "store": "instagram.com",
+        "description": "\\_justcraftinaround\\_\\_ Edited•\n\nCreating this personalized cricket theme hamper from scratch was so much fun🏏✨  \nFrom customized goodies to every tiny cricket detail, everything was made with love for a little cricket fan💙  \n  \nPerfect for birthday surprises for cricket lovers💯  \n  \nFor more details Kindly DM us or WhatsApp us on 9820623636  \n  \n[ cricket themed hamper for kids, cricket lover gift, kids birthday hamper, ipl cricket fans, aesthetic hampers, small business India, luxury hampers, gifts for virat kohli fans, Indian cricket team, icc World Cup, personalised denim jacket and pouch, personalised cricket bat and ball, personalised passport cover and luggage tag ]\n\n_thehashtag__'s profile picture\n\n\\_thehashtag\\_\\_\n\nCricket fans would LOVE this 🏏\n\n1 like\n\nReply",
+        "country": "India"
+      },
+      {
+        "name": "Premium Corporate Gifts Under 5000 for Special Occasions - Loopify",
+        "url": "https://loopify.world/collections/corporate-gifts-under-5000",
+        "price": 2800.0,
+        "currency": "INR",
+        "store": "loopify.world",
+        "description": "Skip to content \n\nLoopify Logo\n\nCart\n\n## Item added to your cart\n\nView cart\n\n# Corporate Gifts Under Rs. 5000\n\nAt this band, a corporate gift stops feeling routine and starts feeling considered. The right pick balances quiet luxury, real utility, and brand expression in a way that lands with senior employees and mid-tier clients alike. At Loopify, the premium corporate gifts under 5000 range carries hand-poured candle hampers, leather-free travel sets, fabric-lined journal combos, and curated experience kits built for milestone moments.\n\n The Home Sanctuary Gift Set - Loopify \n\n  ### The Home Sanctuary Gift Set\n\n  5% OFF\n\n  ### The Home Sanctuary Gift Set\n\n  Price: Regular price   ₹ 2,800.00    \n    Bulk pricing available | Tax & shipping extra [...] ### New Year, New Gear Corporate Giftin",
+        "country": "India"
+      },
+      {
+        "name": "Premium Corporate Gifts Online India | Bulk Orders Available",
+        "url": "https://www.thedecorcircle.com/collections/corporate-gifts",
+        "price": null,
+        "currency": null,
+        "store": "thedecorcircle.com",
+        "description": "Loading     Loading\n\n  ### Ammil Flower Grey Ceramic Vase\n\n  Regular price  Rs. 3,000\n\n  Regular price   Sale price  Rs. 3,000\n\n  Unit price  /  per\n Loading\n\n  Green Paradise Salad Bowl Gift hamper Green Paradise Salad Bowl Gift hamper\n\n  Loading     Loading\n\n  ### Green Paradise Salad Bowl Gift hamper\n\n  Regular price  Rs. 5,600\n\n  Regular price   Sale price  Rs. 5,600\n\n  Unit price  /  per\n -10%\n\n  Loading\n\n  Stellaus Green Decorative Candle Stands (Set of 2) Stellaus Green Decorative Candle Stands (Set of 2)\n\n  Loading     Loading\n\n  ### Stellaus Green Candle Stands (Set of 2)\n\n  Regular price  Rs. 17,100\n\n  Regular price   ~~Rs. 19,000~~  Sale price  Rs. 17,100\n\n  Unit price  /  per\n\n  Sale\n Loading\n\n  Kheima Modern Office Table Clock Kheima Modern Office Table Clock [...] Unit price ",
+        "country": "India"
+      },
+      {
+        "name": "Corporate Gifts Under 3000 | Luxury Business Gifts Mumbai",
+        "url": "https://bestcorporategiftsmumbai.com/corporate-gifts-by-budget/corporate-gifts-under-3000",
+        "price": null,
+        "currency": null,
+        "store": "bestcorporategiftsmumbai.com",
+        "description": "### Executive Welcome Kit-Premium Corporate Swag\n\nRs. 2595\n\n5-in-1 Executive Gift Set-Perfect for Corporate Gifting.png \"5-in-1 Executive Gift Set-Perfect for Corporate Gifting\") 5-in-1 Executive Gift Set-Perfect for Corporate Gifting  \n\n### 5-in-1 Executive Gift Set-Perfect for Corporate Gifting\n\nRs. 1699\n\nCustomized Premium Metal Loop Keychain  \n\n### Customized Premium Metal Loop Keychain\n\nRs. 95\n\nExecutive 6-in-1 Corporate Laptop Gift Set with Custom Accessories  \n\n### Executive 6-in-1 Corporate Laptop Gift Set with Custom Accessories\n\nRs. 1599\n\nCorporate Gifts for Employees Tech Essentials Set  \n\n### Corporate Gifts for Employees Tech Essentials Set\n\nRs. 1595\n\nCustom Gifts for Employees Eco Executive Gift Set  \n\n### Custom Gifts for Employees Eco Executive Gift Set\n\nRs. 1695 [...] ### ",
+        "country": "India"
+      },
+      {
+        "name": "Luxury Gift Hampers | India's Favourite Online Gift Shop",
+        "url": "https://www.angroos.com",
+        "price": null,
+        "currency": null,
+        "store": "angroos.com",
+        "description": "+ Men’s day\n  + Year Ending\n    - for Corporate\n       Employees\n       Clients\n       Colleagues\n       Management\n    - for Family\n  + Children’s day\n    - For Boys\n    - For Girls\n Other Occasions\n  + Holy Communion\n  + congratulations\n    - Gift to Celebrity\n    - Promotion gifts\n    - Appreciation\n  + Housewarming\n  + Home Visit\n  + New Born\n  + Retirement\n  + Dad to Be\n  + Mom to Be\n  + Token of Love\n  + Apology Gifts\n  + Party\n Thank you\n  + Thank You Advocate\n  + Thank You Doctor\n  + Token of Love\n Gourmet gifts\n  + Yummy Hamper\n  + Snacks Hamper\n  + Coffee Hamper\n Corporate Gifts\n  + Vaccum Mug gift Set\n  + Powerbank Gift Set\n  + pendrive gift set\n  + Pen Gift Set\n  + Mug Gift Set\n  + Mouse gift set\n  + Keychain Gift Set\n  + Diary gift set\n  + bottle gift set\n  + Belt Gift Set [..",
+        "country": "India"
+      },
+      {
+        "name": "Gift Sets - Customized Corporate Gift Manufacturer from Pune",
+        "url": "https://www.indegreegift.com/gift-sets.html",
+        "price": null,
+        "currency": null,
+        "store": "indegreegift.com",
+        "description": "Packaging TypeBox\n Usage/ApplicationCorporate Gift\n BrandIndegree\n\nView Complete details\n\nYes! I am Interested  Request a call back\n\n## Combo Gift Set With Gift Bag\n\n Combo Gift Set With Gift Bag\n Combo Gift Set With Gift Bag\n Combo Gift Set With Gift Bag\n\nCombo Gift Set With Gift Bag\n\nGet Best Quote\n\nRs 359  / PiecePrice on Request\n\nProduct Brochure\n\n|  |  |\n --- |\n| Set Components | Pen, Diary, Bottle |\n| Gift Set Type | Corporate Gift Set |\n| Material | Paper |\n| Customisation | Logo Print, Logo Engraving, Name Print |\n| Gift Box Type | Paper Box |\n| Is It Handmade | Handmade |\n| Country of Origin | Made in India |\n| Usage/Application | Business Gift |\n\nCombo Gift Set with Gift Bag.Combo Gift Set containing Diary,bottle,pen,Keychain etc  \n  \nSpecification/Additional Details [...] Rs 399",
+        "country": "India"
+      },
+      {
+        "name": "Unique Corporate Gifts in India | Premium Bulk Gifting Solutions",
+        "url": "https://www.giftanaindia.com/corporate-gifts",
+        "price": 2999.0,
+        "currency": "INR",
+        "store": "giftanaindia.com",
+        "description": "Office Essentials Gift Set with Ferrero Rocher\n\n## Office Essentials Gift Set with Ferrero Rocher\n\n~~₹2,999~~ Original price was: ₹2,999.₹2,495Current price is: ₹2,495.\n\nCorporate Personalized Gift Set\n\n## Corporate Personalized Gift Set-Diary, Pen & Keychain\n\n~~₹799~~ Original price was: ₹799.₹495Current price is: ₹495.\n\nOffice and Travel Hamper\n\n## Office and Travel Hamper\n\n₹4,799\n\nCorporate Gift Set\n\n## Personalized Coffee Mug Diary Pen Corporate Gift Set\n\n₹645\n\nEco-Friendly Corporate Gift\n\n## Premium Eco-Friendly Corporate Gift\n\n~~₹1,999~~ Original price was: ₹1,999.₹1,595Current price is: ₹1,595.\n\nLifetime Calendar with Photo Frame Desk Organizer\n\n## Lifetime Calendar with Photo Frame Desk Organizer\n\nGiftana\n\n₹445\n\nCustom Corporate Office Essentials Gift Set [...] Giftana\n\n₹445\n\nCusto",
+        "country": "India"
+      },
+      {
+        "name": "Corporate Gifts Online for Employees, Staff - IGP.com",
+        "url": "https://www.igp.com/corporate-gifts",
+        "price": null,
+        "currency": null,
+        "store": "igp.com",
+        "description": "Whether you're gifting in bulk or looking for something premium, explore top corporate gift categories tailored to suit every budget and business need\n\n### Personalized Corporate Gifts That Leave a Lasting Impression\n\nIGP is the most trusted and reliable online gift shop in India, and we make sure our customers enjoy a satisfying online gifting experience. We have tech-enabled warehouses, and inventory centers, which ensure proper quality management of our products and services. We offer free shipping across India. So, you can send exciting corporate gifts to Hyderabad or Mumbai or any other city in India, without shipping charges. [...] Whether you're gifting in bulk or looking for something premium, explore top corporate gift categories tailored to suit every budget and business need\n\n##",
+        "country": "India"
+      },
+      {
+        "name": "Corporate Gifts Under INR 3,000 - Knights & Walker",
+        "url": "https://www.knightsandwalker.com/en-us/blogs/journals/corporate-gifts-under-inr-3-000",
+        "price": 3000.0,
+        "currency": "INR",
+        "store": "knightsandwalker.com",
+        "description": "Know your recipient — are you gifting employees, clients or partners? Choose accordingly.\n Choose the maximum utility gift; gifts that can be used in everyday life create a stronger brand impression.\n Focus on the quality; always select gifts of high quality with premium packaging.\n Add personalization; this makes the gift thoughtful and meaningful, and the recipient feels valued.\n\n## Premium Leather Corporate Gift\n\nLeather corporate gifts are always the most appreciated gifts in the corporate world because leather reflects sophistication, durability and professionalism. A leather corporate gift is long-lasting, can be used daily, is easy to customize with logos and initials and creates a good brand impression. [...] Some of the full-grain leather corporate gift options under ₹3,000 are le",
+        "country": "India"
+      },
+      {
+        "name": "Buy Corporate Gifts for Employees, clients, partners, founders, Diwali",
+        "url": "https://indianheirloomcompany.com/collections/for-corporate-gifting",
+        "price": 3500.0,
+        "currency": "INR",
+        "store": "indianheirloomcompany.com",
+        "description": "Your cart is empty\n\nStart shopping\n\n10,000+ Gifts Delivered\n\nEnd to End Gifting Solutions - From Bespoke Products, Branding, Packaging & Delivery\n\n600+ Distinguished Clients\n\nTrusted By Leading Brands, Institutions & Families For Bulk Festive / VIP GIfting\n\n70% returning patrons\n\nDelivering Thoughtful Gifting Experiences From Concept To Completion\n\n100% Custom Curated\n\nMade-to-Order by Metalsmiths & Miniature Artists from PAN India\n\n## CUSTOM HAMPER COLLECTIONS\n\nExplore our thoughtfully curated collection of premium gift sets, crafted for meaningful gifting.\n\n### Brass Platter with Mithai\n\nStarting at ₹3500\n\n Chat on Whatsapp\n\n### Brass Kettle with Tea Jar\n\nStarting at ₹5000\n\n Chat on Whatsapp\n\n### Custom Potli/ Silk Packaging\n\nStarting at ₹20,000\n\n Chat on Whatsapp [...] Starting at ₹20,0",
+        "country": "India"
+      },
+      {
+        "name": "Buy Corporate Gifts Online in India for Employee, Client & Companies",
+        "url": "https://www.monabindia.com/pages/corporate-gifting",
+        "price": null,
+        "currency": null,
+        "store": "monabindia.com",
+        "description": "Make a lasting impression with eco-friendly corporate gifts.\n Showcase timeless sophistication with vegan leather corporate gifts.\n Combining both practicality and style with corporate gifting bags.\n Reflect your brand’s identity with tailored gifts.\n Welcome new employees with a curated employee onboarding gift kit.\n Celebrate festivals and milestones with Diwali corporate gift hampers.\n Enjoy hassle-free, reliable delivery across India.\n Strengthen client relationships with memorable and premium corporate gifts.\n\n## Explore Sustainable and Stylish Corporate Gifts Online for Employee and Companies\n\n### Buy Eco-Friendly Corporate Gifts To Show Care To the Planet [...] #### South\n\nMr. Mohit\n\nrocwins@gmail.com   \n 8296730417\n\n# Buy Corporate Gifts Online: Thoughtful, Sustainable and Stylish ",
+        "country": "India"
+      },
+      {
+        "name": "Diwali Gift for Employees Under 5000 | Premium Gift Options - Loopify",
+        "url": "https://loopify.world/collections/diwali-gift-for-employees-under-5000",
+        "price": 5000.0,
+        "currency": "INR",
+        "store": "loopify.world",
+        "description": "## Multi-Location Delivery Across India\n\nPremium corporate gifting programs often span multiple cities, offices, and home addresses. Loopify's logistics network is built for this. Corporate diwali gifts for employees across offices in Delhi, Mumbai, Bengaluru, Hyderabad, and beyond all ship with the same quality and care.\n\n12,000+ pin codes covered. Direct-to-home delivery for remote and hybrid employees. Individual tracking for every package. Dedicated handling protocols for premium orders - padding, double-boxing, and fragile item protection at no extra cost.\n\nFor diwali gift hampers programs at ₹5,000 per unit, every single package arrives in perfect condition. Our 0.00003% breakage rate is maintained regardless of order size or delivery complexity. [...] Unit price  /  per\n\n  #### Bulk",
+        "country": "India"
+      },
+      {
+        "name": "Order Corporate Gifts for Employees, Client & Staff from FNP",
+        "url": "https://www.fnp.com/corporate",
+        "price": null,
+        "currency": null,
+        "store": "fnp.com",
+        "description": "Personalised & Branded Gifts: Customised corporate gifts with company branding or individual names add a personal touch while reinforcing brand identity.\n Premium & Luxury Gifts: For senior leadership, key clients, and business partners, premium corporate gifting options such as luxury hampers and high-end products help create a strong impression.\n Curated Gift Boxes: Flexible and theme-based, curated boxes allow businesses to design unique corporate gifts that align with specific campaigns or occasions. [...] Worldwide\n\n## Your Customised Corporate Gifting Solution\n\nFill out the form below and our team will get in touch with you Sale 9711304340\n\n## Corporate Gifting, Seamlessly Managed by India’s Leading Enterprise Gifting Partner FNP [...] Channel Partners & Vendors: Strengthening your e",
+        "country": "India"
+      },
+      {
+        "name": "Best Corporate Gifts for Employees & Clients | Pebel Lifeware",
+        "url": "https://pebel.in/pages/corporate-gifting",
+        "price": null,
+        "currency": null,
+        "store": "pebel.in",
+        "description": "Why Us?\n\nWhy Us?\n\nWhy Us?\n\n## Unique Corporate Gifts\n\nAt Pebel lifeware, we understand one size doesn’t fit all! We provide tailored corporate gifting solutions catering all segments from professional gifts to premium corporate gifts in India, from gift hampers to employees to executive gifting.\n\nOur array of products allows you to choose from branded gifts to unique corporate gifts simplifying the cumbersome process of sourcing items from various vendors and  \nadding company logo with different processes. We are a one-stop solution for all types of branding including UV printing, engraving, heat transfer, Screen  \nprinting, embossing, gold foiling, sublimation, etc\n\n### The Significance of Corporate Gifting: Elevate Your Branding with Pebel Lifeware [...] Rs. 1,687.50 Regular price ~~Rs. ",
+        "country": "India"
+      },
+      {
+        "name": "Cricket Themed Gifts - Amazon.in",
+        "url": "https://www.amazon.in/cricket-themed-gifts/s?k=cricket+themed+gifts&page=2",
+        "price": null,
+        "currency": null,
+        "store": "amazon.in",
+        "description": "## 3D LED Illusion Cricket Lamp Inspired by Virat Kohli | Trophy Design Night Light with Wooden Base | Multicolor Lamp | Gift for Cricket Fans\n\nWorld Gift Mart Original Virat 18 Jersey Keychain | Cricket Themed Stylish Key Ring with Premium Strap | Sports Keychain G...\n\n## Original Virat 18 Jersey Keychain | Cricket Themed Stylish Key Ring with Premium Strap | Sports Keychain Gift for Fans\n\nCRAFT MANIACS CRICKET LOVE A5 SIZED RULED 120 PAGES SPIRAL NOTEBOOK | BEST GIFT FOR CRICKET LOVERS (CRICKET IS IN MY DNA)\n\n## CRAFT MANIACS CRICKET LOVE A5 SIZED RULED 120 PAGES SPIRAL NOTEBOOK | BEST GIFT FOR CRICKET LOVERS (CRICKET IS IN MY DNA)\n\nCricket Bat & Ball Keychain Set | Mini Wooden Bat with Red Ball Key Ring | Sports Keychain for Bike Car Home Keys for Cric... [...] Sponsored Ad - ZAHEPA Met",
+        "country": "India"
+      },
+      {
+        "name": "Promotional Cricket Merchandise",
+        "url": "https://www.brandstik.com/best-collection/ipl-cricket-merchandise/7289",
+        "price": null,
+        "currency": null,
+        "store": "brandstik.com",
+        "description": "# Miniature Cricket Bat\n\nThe mini engraved cricket bat is an ideal cricket related giveaway. The engraving gives the bat a real executive feel. It comes with a black handle and is made of a high quality wood in India\n\nThe mini engraved cricket bat is an ideal cricket related giveaway. The engraving gives the bat a real executive feel. It comes with a black handle and is made of a high quality wood in India\n\n# Fan Roller\n\nMini handheld rolling roller banner retractable hand held roll up fan banners.\n\nMini handheld rolling roller banner retractable hand held roll up fan banners.\n\n# Cheering Horns\n\nCricket Fans Sports Meeting Cheer Props Whistles Horns Noise Maker Birthday Party Christmas New Year [...] # Desktop Clock Cum Memo Holder\n\n3 In 1 - Cricket Name Card Holder, Memo Pad & Clock.\n\n3 I",
+        "country": "India"
+      },
+      {
+        "name": "Buy/Send Book Cricket Gift Set Online - FNP",
+        "url": "https://www.fnp.com/gift/book-cricket-gift-set",
+        "price": 449.0,
+        "currency": "INR",
+        "store": "fnp.com",
+        "description": "Free Delivery Banner\n\nFerns N Petals\n\ndesktop icons\n\nMy Reminders\n\nPlaceholder Image\n\npdp_main_image\n\n# Book Cricket Gift Set\n\nFree Delivery\n\n449₹ 449\n\nGift Receiver’s Location\n\nOffers Available\n\noffer-image\n\nGet Cashback up to Rs.300 on a minimum transaction of Rs.799\n\noffer-image\n\nGet up to Rs.250 cashback on Amazon Pay Balance orders with a minimum order value of Rs.499. Valid once per user. Offer valid till 25th Jun'26.\n\noffer-image\n\nFlat 10% off up to Rs.200 on a minimum transaction of Rs.999\n\noffer-image\n\nGet up to Rs.300 cashback on transactions using MobiKwik UPI (@ikwik)/Wallet.\n\nAbout the product\n\n## Explore More\n\nFlowers\n\nCakes\n\nPlants\n\nPersonalised Gifts\n\n### By Types\n\n Flowers Online\n Rose Flower Bouquet\n Orchids Online\n View 8 More [...] Luxe Flowers\n Lilies Online\n Tulips On",
+        "country": "India"
+      },
+      {
+        "name": "Online Cricket Store, Brewing Cricket – www.brewingcricket.com",
+        "url": "https://www.brewingcricket.com",
+        "price": null,
+        "currency": null,
+        "store": "brewingcricket.com",
+        "description": "Gray Nicolls\n\nGray-Nicolls GOLD Edition - Batting Gloves   ~~Rs. 4,999.00~~  Rs. 4,400.00 /   \n\nWhite\n\nBlue\n\nBlack\n\nYellow\n\nAvailable in 4 colors\n\nSale   Gray-Nicolls Ultimate 360 Steel - Cricket Helmet Gray-Nicolls Ultimate 360 Steel - Cricket Helmet \nQuick view  \n\nGray Nicolls\n\nGray-Nicolls Ultimate 360 Steel - Cricket Helmet   ~~Rs. 4,999.00~~  Rs. 4,400.00 /\n\nGray-Nicolls Test - Abdomen Guard Gray-Nicolls Test - Abdomen Guard \nQuick view  \n\nGray Nicolls\n\nGray-Nicolls Test - Abdomen Guard  Rs. 249.00 /\n\nSale   Gray-Nicolls Cloud Catcher - Training Equipment Gray-Nicolls Cloud Catcher - Training Equipment \nQuick view  \n\nGray Nicolls\n\nGray-Nicolls Cloud Catcher - Training Equipment   ~~Rs. 3,499.00~~  Rs. 3,080.00 / [...] Sale   MRF Champ JR - KW. Cricket Bats \nQuick view  \n\nMRF\n\nMRF Cham",
+        "country": "India"
+      },
+      {
+        "name": "Cricket Gifts",
+        "url": "https://www.amazon.com/cricket-gifts/s?k=cricket+gifts",
+        "price": 23.49,
+        "currency": "USD",
+        "store": "amazon.com",
+        "description": "Sign in\n\nNew customer? Start here.\n\nAll)\n\n   Health AI \n   Whole Foods \n   Amazon Haul \n   Medical Care \n   Amazon Basics \n   Best Sellers \n   Prime \n   Today's Deals \n   New Releases \n   Books \n   Groceries \n   Gift Cards \n   Sell \n   Music \n   Registry \n   Fashion \n   Amazon Home \n   Automotive \n   Toys & Games \n   Home Improvement \n   Sports & Outdoors \n   Baby \n   Smart Home \n   Shop By Interest \n   Pharmacy \n   Kindle Books \n   Luxury \n\n\n\n(1K)\n\nPrice, product page$23.49$23.49\n\nJoin Prime to get FREE delivery Tomorrow, Jul 1\n\nOr Non-members get FREE delivery Sun, Jul 5 on $35 of items shipped by Amazon\n\nAdd to cart\n\nImage 9: Cricket Gift, Cricket Mug, Funny Cricket Gifts For Men, Him, Husband, Boyfriend, Dad, Cricketing Gifts, Gift For Cricketer... [...] 4.0_4.0 out of 5 stars_)\n\n(19)\n",
+        "country": "India"
+      },
+      {
+        "name": "Cricket Lovers Collection – Perfect Gift Item Calling all Cricket ...",
+        "url": "https://www.instagram.com/reel/DZPyxpuvgMR",
+        "price": null,
+        "currency": null,
+        "store": "instagram.com",
+        "description": "🎁 Best For:  \n• Cricket fans & sports lovers  \n• Office & study table décor  \n• Birthday & special occasion gifting  \n• Showcase & collection displays  \n  \n📍 Available at:  \nArjun Gifts & Watches – Best Gift Shop  \n📍 5/1, Arundalpet, Guntur  \n📞 99663 04447  \n  \n🎯 Digital Partner – Meta DNA  \n📱 77949 61112 | 📧 metadnaofficial@gmail.com  \n📸 Instagram: @metadna\\_official  \n  \n cricket lover gift item, cricket decorative piece, polystone cricket model, sports lover gift, cricket showcase item  \n  \n.   \n.   \n.   \n  \n#CricketLovers #GiftItem #Polystone #SportsDecor #Guntur [...] 🏏 Cricket Lovers Collection – Perfect Gift Item 🏏  \nCalling all Cricket Lovers! 🎉  \n  \nBring home these stylish cricket-themed decorative pieces, specially designed for fans of the game. Made from premium polystone mater",
+        "country": "India"
+      }
+    ],
+    "validated_products": [
+      {
+        "name": "Cricket Ball Inspired Card Holder with Stitched Pattern - Voganow",
+        "url": "https://www.voganow.com/products/cricket-ball-inspired-card-holder-with-stitched-pattern",
+        "price": 4999.0,
+        "currency": "INR",
+        "store": "voganow.com",
+        "description": "Ask a question   Share\n\nCricket Ball Inspired Card Holder with Stitched Pattern\n\n### Cricket Ball Inspired Card Holder with Stitched Pattern\n\nRegular price  ₹ 4,999\n\nSale price  ₹ 4,999  Regular price  ~~₹ 4,999~~\n\nUnit price\n\n/\n\n## You Might Also Like\n\n## Recently Viewed Products\n\nShape: Rapid [...] BRUNE & BARESKIN\n\n SKU:\n\n  VNCH-147-01-GL\\_FS\n\nProducts on Sale or Promotions cannot be refunded but exchange only\n\nRegular price  ₹ 4,999\n\nSale price  ₹ 4,999  Regular price  ~~₹ 4,999~~\n\nUnit price\n\n/\n\n(Inclusive of all Taxes)\n\nproducts.product.pickup\\_availability.unavailable\n\nSTILL CONFUSED? SPEAK TO OUR STYLIST\n\n Contact Us on Whatsapp WHATSAPP\n Contact Us On Call CALL\n\nDescription\n\nOur Cricket Ball Inspired Card Holder is a perfect accessory for any occasion. Crafted with the highest-qua",
+        "country": "India"
+      }
+    ],
+    "confidence_flags": [
+      "Only 1 validated products found after three search passes; human input is recommended."
+    ],
+    "workflow_metrics": [
+      {
+        "node": "extract_signals",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 3359.5
+      },
+      {
+        "node": "generate_search_queries",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1651.5
+      },
+      {
+        "node": "search_products",
+        "tool": "search",
+        "calls": 6,
+        "latency_ms": 6652.6
+      },
+      {
+        "node": "validate_products",
+        "tool": "http",
+        "calls": 36,
+        "latency_ms": 5982.9
+      },
+      {
+        "node": "generate_search_queries",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1570.9
+      },
+      {
+        "node": "search_products",
+        "tool": "search",
+        "calls": 6,
+        "latency_ms": 3856.8
+      },
+      {
+        "node": "validate_products",
+        "tool": "http",
+        "calls": 17,
+        "latency_ms": 5.8
+      },
+      {
+        "node": "generate_search_queries",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1163.8
+      },
+      {
+        "node": "search_products",
+        "tool": "search",
+        "calls": 6,
+        "latency_ms": 1244.2
+      },
+      {
+        "node": "validate_products",
+        "tool": "http",
+        "calls": 0,
+        "latency_ms": 5.1
+      },
+      {
+        "node": "rank_gifts",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 1815.9
+      },
+      {
+        "node": "generate_messages",
+        "tool": "llm",
+        "calls": 1,
+        "latency_ms": 822.8
+      }
+    ]
+  }
+}

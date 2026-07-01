@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Giftcraft · Personalised Gift Agent</title>
+  <style>
+    :root{font-family:Inter,ui-sans-serif,system-ui,sans-serif;color:#172823;background:#f7f4ed;--ink:#172823;--green:#126b55;--mint:#dff1e9;--line:#dedbd2}
+    *{box-sizing:border-box}body{margin:0}.shell{max-width:1240px;margin:auto;padding:28px 22px 60px}
+    header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}.brand{font-weight:800;font-size:1.35rem}.brand i{color:#e57b4a;font-style:normal}
+    .status{font-size:.84rem;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:white}.dot{display:inline-block;width:8px;height:8px;background:#26a66f;border-radius:50%;margin-right:6px}
+    h1{font-size:clamp(2.3rem,5vw,4.5rem);line-height:.98;letter-spacing:-.055em;max-width:800px;margin:20px 0 14px}.lead{font-size:1.08rem;color:#66736e;max-width:680px;line-height:1.6}
+    .tabs{display:flex;gap:8px;margin:30px 0 18px}.tab{background:transparent;color:#52605b;border:1px solid var(--line)}.tab.active{background:var(--ink);color:white}
+    button{font:inherit;border:0;border-radius:10px;padding:11px 16px;cursor:pointer;background:var(--green);color:white;font-weight:650}button.alt{background:#edf1ee;color:#29453c}button:disabled{opacity:.55;cursor:wait}
+    .panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 12px 40px #1728230b}.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.wide{grid-column:1/-1}
+    label{display:block;font-size:.82rem;font-weight:700;margin-bottom:7px;color:#42514c}input,textarea,select{width:100%;border:1px solid #d6d9d5;border-radius:10px;padding:12px;font:inherit;background:#fbfcfb;color:var(--ink)}textarea{min-height:92px;resize:vertical}
+    .budget{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}.submit-row{display:flex;align-items:center;gap:14px;margin-top:21px}.hint{color:#72807b;font-size:.85rem}
+    .workspace{display:grid;grid-template-columns:280px 1fr;gap:18px}.contacts{max-height:720px;overflow:auto}.contact{width:100%;text-align:left;margin:5px 0;background:#f2f5f2;color:#244139}.contact.active{background:var(--mint)}
+    .badge{font-size:.73rem;background:var(--mint);padding:4px 8px;border-radius:20px;margin-left:6px}.flags{padding:12px 15px;background:#fff5e9;border-radius:10px;color:#755432}
+    .gift-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.gift{border:1px solid var(--line);border-radius:13px;padding:16px}.gift h3{font-size:1rem}.gift a{color:var(--green);font-weight:700}.meta{font-size:.79rem;color:#68756f}.note{font-style:italic;background:#f6f8f6;padding:9px;border-radius:8px}
+    details{margin-top:20px}pre{white-space:pre-wrap;font-size:.77rem;max-height:320px;overflow:auto;background:#f6f7f5;padding:14px;border-radius:10px}.actions{display:flex;gap:8px;margin-top:18px}
+    .empty{text-align:center;padding:60px 20px;color:#74817c}.hidden{display:none!important}.spinner{display:inline-block;width:16px;height:16px;border:2px solid #ffffff70;border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+    @media(max-width:850px){.workspace{grid-template-columns:1fr}.gift-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.wide{grid-column:auto}}@media(max-width:520px){.budget{grid-template-columns:1fr}}
+  </style>
+</head>
+<body><div class="shell">
+  <header><div class="brand">Gift<i>craft</i></div><div class="status" id="system"><span class="dot"></span>Checking services…</div></header>
+  <h1>Thoughtful gifts,<br>grounded in real signals.</h1>
+  <div class="lead">Turn a professional profile into researched, purchasable gift ideas—with transparent reasoning and human approval built in.</div>
+  <div class="tabs"><button class="tab active" id="createTab" onclick="switchTab('create')">Create recommendation</button><button class="tab" id="reviewTab" onclick="switchTab('review')">Review desk</button></div>
+
+  <section id="createView" class="panel">
+    <form id="contactForm">
+      <div class="form-grid">
+        <div><label>Contact name *</label><input name="name" placeholder="Aarav Mehta"></div>
+        <div><label>Role</label><input name="role" placeholder="VP Sales"></div>
+        <div><label>Company</label><input name="company" placeholder="Acme Corp"></div>
+        <div class="wide"><label>Professional bio</label><textarea name="about" placeholder="What do they work on? What matters to them professionally?"></textarea></div>
+        <div class="wide"><label>Topics and interests</label><input name="topics" placeholder="developer productivity, systems thinking, technical leadership books"></div>
+        <div class="wide"><label>Recent posts or comments</label><textarea name="posts" placeholder="One item per line. Use explicit professional signals only."></textarea></div>
+        <div><label>Occasion *</label><input name="occasion" required value="work anniversary"></div>
+        <div><label>Country *</label><input name="country" required value="India"></div>
+        <div><label>Relationship type</label><input name="relationship_type" placeholder="Prospective customer"></div>
+        <div><label>Business goal</label><input name="business_goal" placeholder="Nurture relationship"></div>
+        <div><label>Message tone</label><select name="message_tone"><option>warm professional</option><option>concise</option><option>celebratory</option><option>executive</option></select></div>
+        <div class="wide"><label>Budget</label><div class="budget"><select name="currency"><option>INR</option><option>USD</option><option>EUR</option><option>GBP</option></select><input name="budget_min" type="number" min="0" value="1500" aria-label="Minimum budget"><input name="budget_max" type="number" min="1" value="5000" aria-label="Maximum budget"></div></div>
+        <div class="wide"><label>Or upload assignment-format JSON for multiple contacts</label><input id="bulkFile" type="file" accept=".json,application/json"><div class="hint">Accepts a JSON array or {"contacts": [...]}.</div></div>
+      </div>
+      <div class="submit-row"><button id="generate" type="submit">Research gift ideas</button><span class="hint" id="formStatus">Usually takes 10–30 seconds.</span></div>
+    </form>
+  </section>
+
+  <section id="reviewView" class="workspace hidden">
+    <aside class="panel"><h2>Review queue</h2><div id="contacts" class="contacts">Loading…</div></aside>
+    <main class="panel"><div id="detail" class="empty">Select a contact to inspect recommendations.</div></main>
+  </section>
+</div>
+<script>
+let selected=null, rows=[], currentContact=null;
+const $=id=>document.getElementById(id), esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function api(url,options){const r=await fetch(url,options);if(!r.ok)throw new Error((await r.json().catch(()=>({}))).detail||await r.text());return r.json()}
+function switchTab(tab){$('createView').classList.toggle('hidden',tab!=='create');$('reviewView').classList.toggle('hidden',tab!=='review');$('createTab').classList.toggle('active',tab==='create');$('reviewTab').classList.toggle('active',tab==='review');if(tab==='review')load()}
+async function health(){try{const h=await api('/health');$('system').innerHTML=`<span class="dot"></span>${h.llm_provider} · search ${h.search_configured?'ready':'missing'}`;if(!h.llm_configured||!h.search_configured)$('system').style.background='#fff0df'}catch{$('system').textContent='Service unavailable'}}
+async function load(){rows=await api('/contacts');$('contacts').innerHTML=rows.length?rows.map(x=>`<button class="contact ${x.contact_id===selected?'active':''}" onclick="show('${x.contact_id}')">${esc(x.contact_name)}<span class="badge">${esc(x.status)}</span></button>`).join(''):'<div class="empty">No runs yet.</div>'}
+async function show(id){selected=id;await load();const [c,t]=await Promise.all([api(`/contacts/${id}`),api(`/contacts/${id}/trace`)]);currentContact=c;const gifts=c.ranked_gifts||[];$('detail').innerHTML=`<h2>${esc(c.contact_name)} <span class="badge">${esc(c.status)}</span></h2>
+${c.confidence_flags?.length?`<div class="flags">${c.confidence_flags.map(f=>`⚑ ${esc(f)}`).join('<br>')}</div>`:''}
+<div class="gift-grid">${gifts.map(g=>`<article class="gift"><div class="meta">#${g.rank} · ${esc(g.risk_level)} risk · confidence ${Math.round(g.confidence_score*100)}%</div><h3>${esc(g.gift_name)}</h3><b>${esc(g.estimated_price)}</b><p>${esc(g.why_this_gift)}</p><p class="meta"><b>Grounding:</b> ${esc(g.personalisation_reasoning)}</p><p class="meta"><b>Assumptions:</b> ${esc((g.assumptions||[]).join('; ')||'None')}</p><p class="note">${esc(g.personalised_message)}</p><a href="${esc(g.product_url)}" target="_blank" rel="noopener">View real product ↗</a></article>`).join('')}</div>
+${!gifts.length?'<div class="empty">No validated gifts in this run. Create a new run after checking service status.</div>':''}
+${c.status==='pending_review'?`<div class="actions"><button onclick="act('approve')">Approve</button><button class="alt" onclick="editGifts()">Edit</button><button class="alt" onclick="act('reject')">Reject</button><button class="alt" onclick="act('regenerate')">Regenerate</button></div>`:''}
+<p class="meta">${(c.workflow_metrics||[]).reduce((n,m)=>n+m.calls,0)} tool calls · ${Math.round((c.workflow_metrics||[]).reduce((n,m)=>n+m.latency_ms,0))} ms measured workflow time</p>
+<details><summary>Inspect workflow trace</summary><pre>${esc(JSON.stringify(t,null,2))}</pre></details>`}
+async function act(action){try{const feedback=action==='regenerate'?prompt('What should change?'):null;await api(`/contacts/${selected}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,feedback})});await show(selected)}catch(e){alert(e.message)}}
+async function editGifts(){if(!currentContact?.ranked_gifts?.length)return;const edited=currentContact.ranked_gifts.map((g,i)=>({...g,gift_name:prompt(`Gift ${i+1} name`,g.gift_name)||g.gift_name,why_this_gift:prompt(`Why gift ${i+1}?`,g.why_this_gift)||g.why_this_gift,personalised_message:prompt(`Message for gift ${i+1}`,g.personalised_message)||g.personalised_message}));try{await api(`/contacts/${selected}/review`,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'edit',edited_gifts:edited})});await show(selected)}catch(e){alert(e.message)}}
+$('contactForm').addEventListener('submit',async e=>{e.preventDefault();const f=new FormData(e.target),button=$('generate');button.disabled=true;button.innerHTML='<span class="spinner"></span> Researching';$('formStatus').textContent='Extracting signals and validating real products…';const lines=s=>String(s||'').split('\\n').map(x=>x.trim()).filter(Boolean);try{let contacts;const file=$('bulkFile').files[0];if(file){const parsed=JSON.parse(await file.text());contacts=Array.isArray(parsed)?parsed:parsed.contacts}else{contacts=[{name:f.get('name'),role:f.get('role'),company:f.get('company'),about:f.get('about'),recent_posts:lines(f.get('posts')),engaged_topics:String(f.get('topics')||'').split(',').map(x=>x.trim()).filter(Boolean),relationship_context:{relationship_type:f.get('relationship_type'),business_goal:f.get('business_goal')},gift_context:{occasion:f.get('occasion'),country:f.get('country'),currency:f.get('currency'),budget_min:Number(f.get('budget_min')),budget_max:Number(f.get('budget_max')),message_tone:f.get('message_tone')}}]}const result=await api('/contacts/batch',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contacts})});selected=result.contacts[0].contact_id;switchTab('review');await show(selected)}catch(err){$('formStatus').textContent=err.message}finally{button.disabled=false;button.textContent='Research gift ideas'}})
+health();
+</script></body></html>

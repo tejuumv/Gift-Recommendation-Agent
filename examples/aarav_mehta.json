@@ -1,0 +1,56 @@
+{
+  "contacts": [
+    {
+      "name": "Aarav Mehta",
+      "role": "VP Sales",
+      "company": "Acme Corp",
+      "location": "Bengaluru, India",
+      "linkedin_profile": {
+        "headline": "VP Sales at Acme Corp | Enterprise SaaS | GTM Leadership",
+        "about": "I enjoy building high-performing revenue teams and scaling SaaS businesses across India and Southeast Asia.",
+        "experience": [
+          {
+            "title": "VP Sales",
+            "company": "Acme Corp",
+            "description": "Leading enterprise sales, strategic accounts, and GTM expansion."
+          },
+          {
+            "title": "Regional Sales Director",
+            "company": "Salesforce",
+            "description": "Managed enterprise accounts across BFSI and retail."
+          }
+        ],
+        "recent_posts": [
+          "Great sales teams are built on trust, coaching, and consistency.",
+          "India’s SaaS ecosystem is entering an exciting new phase.",
+          "Still recovering from yesterday’s India vs Australia match. What a game!"
+        ],
+        "recent_comments": [
+          "Completely agree — pipeline discipline matters more than heroic end-of-quarter selling.",
+          "Loved this take on customer-led growth.",
+          "Cricket teaches leadership better than most management books."
+        ],
+        "engaged_topics": [
+          "Cricket",
+          "Revenue leadership",
+          "SaaS GTM",
+          "Customer-led growth",
+          "Team building"
+        ]
+      },
+      "relationship_context": {
+        "relationship_type": "Prospective customer",
+        "last_interaction": "Positive discovery call last week",
+        "business_goal": "Nurture relationship before follow-up meeting"
+      },
+      "gift_context": {
+        "occasion": "Post-meeting thank you",
+        "budget_min": 3000,
+        "budget_max": 5000,
+        "currency": "INR",
+        "country": "India",
+        "message_tone": "warm professional"
+      }
+    }
+  ]
+}
