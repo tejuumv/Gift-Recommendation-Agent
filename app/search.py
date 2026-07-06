@@ -21,7 +21,7 @@ PRICE_PATTERN = re.compile(
 NON_RETAIL_DOMAINS = {
     "youtube.com", "youtu.be", "reddit.com", "linkedin.com", "instagram.com",
     "facebook.com", "medium.com", "goodreads.com", "rtings.com", "dzone.com",
-    "pinterest.com", "tiktok.com", "x.com", "twitter.com", "wikipedia.org",
+    "pinterest.com", "tiktok.com", "x.com", "wikipedia.org",
 }
 COUNTRY_TLDS = {
     "India": ".in",

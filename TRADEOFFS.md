@@ -22,9 +22,3 @@
 - The professional-safety filters are intentionally conservative and mostly English.
 - Batch processing is synchronous until review; production should use a job queue.
 
-## How to discuss this in the interview
-
-The important product decision is that “top three” is a goal, not permission to
-hallucinate. When only one product can be validated, the agent returns one product,
-shows the full trace, explains the confidence issue, and lets a human edit or
-regenerate. That is safer than inventing two extra links.
